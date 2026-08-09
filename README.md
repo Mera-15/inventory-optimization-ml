@@ -22,6 +22,16 @@ En este primer gráfico se puede apreciar el volumen de mercadería que gestiona
 <img width="1740" height="473" alt="Sin título2" src="https://github.com/user-attachments/assets/7054cbb1-6810-4195-b2fc-4819e300f9a7" />
 En este segundo gráfico es fácil identificar que los picos con mayor volumen de ventas son en julio. La pregunta ahora es, ¿estas ventas son generales de la empresa o individuales de cada sucursal?
 
+<img width="1743" height="473" alt="Sin título4" src="https://github.com/user-attachments/assets/ee6a452b-9832-4fd3-88c4-1a6ed1482443" />
+
+**Respuesta:** Al cruzar los datos de tiempo con cada tienda específica, descubrí que todas las sucursales experimentan este mismo pico en julio. Se trata de un patrón estacional generalizado del negocio y no de un evento aislado.
+
+Finalmente, al hacer zoom en la dinámica de una semana habitual:
+
+<img width="1744" height="473" alt="Sin título3" src="https://github.com/user-attachments/assets/c8b9da9f-1578-42b6-9423-7037b5a344b6" />
+
+Este gráfico muestra una tendencia clara: las ventas aumentan progresivamente a medida que se llega al fin de semana, tocando su punto máximo los domingos. Esto confirma que la variable "día de la semana" será clave para que el algoritmo anticipe la demanda.
+
 🤖 **El Modelo Predictivo:** *(En progreso...⏳)*
 
 📈 **Resultados y Conclusiones:** *(En progreso...⏳)*
