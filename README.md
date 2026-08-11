@@ -41,4 +41,15 @@ Para evitar que el modelo haga trampa "viendo el futuro", los datos se dividiero
 * **Train (80%):** Datos históricos utilizados para que el algoritmo aprenda los patrones de demanda.
 * **Test (20%):** Los meses más recientes, ocultos durante el entrenamiento, para evaluar la precisión real del modelo frente a datos desconocidos.
 
-📈 **Resultados y Conclusiones:** *(En progreso...⏳)*
+📈 **Resultados y Conclusiones:** Tras evaluar el modelo **Random Forest Regressor** con el 20% de los datos temporales más recientes (Test set), se obtuvieron las siguientes métricas:
+
+* **MAE (Error Absoluto Medio):** 36.17 unidades.
+* **Interpretación:** Esto significa que, en promedio, el modelo predice la demanda diaria de un artículo en una sucursal específica con un margen de error de apenas ~36 unidades.
+
+### Conclusión del Proyecto
+El Análisis Exploratorio de Datos (EDA) confirmó que las ventas de la cadena tienen una fuerte tendencia alcista a nivel anual y picos estacionales muy marcados (especialmente en el mes de julio y durante los fines de semana).
+
+Al alimentar un algoritmo de Machine Learning con estas variables temporales procesadas, se logra crear una herramienta predictiva confiable. Para el equipo de logística y compras, implementar este modelo significa:
+1. Dejar de reponer inventario basándose en la intuición.
+2. Reducir el quiebre de stock durante las explosiones de ventas de mitad de año.
+3. Planificar estratégicamente las entregas de proveedores para los días de menor flujo (como los lunes y martes).
