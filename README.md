@@ -1,5 +1,7 @@
 # 📋 Predicción de Demanda y Control de Inventario con Machine Learning 🤖
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mera-15/inventory-optimization-ml/blob/main/previsión_demanda_de_articulos.ipynb)
+
 ## 📖 El origen del proyecto
 Este proyecto nace de mi propia experiencia trabajando en la gestión y control de stock para una cadena de almacenes. Como encargada del seguimiento de inventario, trabajaba codo a codo con el sector de compras.
 
@@ -32,6 +34,11 @@ Finalmente, al hacer zoom en la dinámica de una semana habitual:
 
 Este gráfico muestra una tendencia clara: las ventas aumentan progresivamente a medida que se llega al fin de semana, tocando su punto máximo los domingos. Esto confirma que la variable "día de la semana" será clave para que el algoritmo anticipe la demanda.
 
-🤖 **El Modelo Predictivo:** *(En progreso...⏳)*
+🤖 **El Modelo Predictivo:** Para este proyecto elegí implementar un algoritmo de **Random Forest Regressor** (Bosque Aleatorio). Al tratarse de una serie de tiempo con patrones estacionales marcados, este modelo de ensamble es ideal porque puede capturar relaciones complejas no lineales entre las fechas y las ventas.
+
+**Estrategia de Validación:**
+Para evitar que el modelo haga trampa "viendo el futuro", los datos se dividieron de forma estrictamente cronológica:
+* **Train (80%):** Datos históricos utilizados para que el algoritmo aprenda los patrones de demanda.
+* **Test (20%):** Los meses más recientes, ocultos durante el entrenamiento, para evaluar la precisión real del modelo frente a datos desconocidos.
 
 📈 **Resultados y Conclusiones:** *(En progreso...⏳)*
