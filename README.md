@@ -53,3 +53,13 @@ Al alimentar un algoritmo de Machine Learning con estas variables temporales pro
 1. Dejar de reponer inventario basándose en la intuición.
 2. Reducir el quiebre de stock durante las explosiones de ventas de mitad de año.
 3. Planificar estratégicamente las entregas de proveedores para los días de menor flujo (como los lunes y martes).
+
+### 🧠 ¿Qué aprendió el algoritmo? (Feature Importance)
+Al analizar la importancia de las variables que utilizó el Random Forest Para hacer sus predicciones, se descubrió el "razonamiento" del modelo:
+
+<img width="1743" height="467" alt="Sin título5" src="https://github.com/user-attachments/assets/7a53d35b-684a-4fb7-beca-639303b05226" />
+
+
+1. **El Artículo (~53%):** Es, por lejos, la variable más decisiva. El tipo de producto define el volumen base de ventas mucho más que cualquier factor temporal.
+2. **La Tienda (~16%) y el Mes (~13%):** Siguen en el ranking de importancia. Esto confirma matemáticamente lo que se descubrió visualmente en el EDA: la ubicación de la sucursal y la estacionalidad mensual (el pico de julio) son pilares fundamentales del negocio.
+3. **El Día de la Semana:** Si bien no es la variable principal, le aporta al algoritmo el detalle necesario para predecir la dinámica semanal y anticiparse al salto de ventas que ocurre de viernes a domingo.
